@@ -4,9 +4,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
@@ -16,8 +16,9 @@ body {
 .color-picker-container {
     background-color: #fff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /*border-radius: 8px;*/
+    margin: auto;
+    /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
     text-align: center;
     width: 100%;
     max-width: 700px;
@@ -147,4 +148,81 @@ span {
     min-width: 30px;
     text-align: right;
     font-weight: bold;
+}
+
+/* Styling for the How-To-Use Container */
+.how-to-use-container {
+    background-color: #fff; /* White background, similar to main container */
+    padding: 30px;
+    margin: auto;
+    /*margin-top: 40px; /* Add some space above it */
+    /*border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    text-align: left; /* Align text to the left for readability */
+    max-width: 700px; /* Match the max-width of the main picker */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    color: #333; /* Default text color */
+}
+
+.how-to-use-container h2 {
+    color: #007bff; /* Primary blue for main heading */
+    margin-bottom: 25px;
+    font-size: 1.8em; /* Slightly larger for main section heading */
+    text-align: center; /* Center the main title */
+}
+
+.how-to-use-container h3 {
+    color: #007bff; /* Use primary blue for sub-headings too */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4em; /* Smaller than h2, larger than h4 */
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    padding-bottom: 5px;
+}
+
+.how-to-use-container h4 {
+    color: #333; /* Darker color for list item headings */
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.how-to-use-container p {
+    line-height: 1.6; /* Improve readability for paragraphs */
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.how-to-use-container ol {
+    margin-bottom: 20px;
+    padding-left: 25px; /* Indent list items */
+}
+
+.how-to-use-container ol li {
+    margin-bottom: 15px; /* Space between list items */
+}
+
+/* Styling for inline code snippets (like #007BFF or rgb(0, 123, 255)) */
+.how-to-use-container code {
+    background-color: #eef; /* Light blue background for code */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Monospace font */
+    color: #c00; /* A distinct color for code */
+    font-weight: bold;
+}
+
+/* Adjust for smaller screens if necessary, though max-width already helps */
+@media (max-width: 600px) {
+    .how-to-use-container {
+        padding: 20px; /* Reduce padding on smaller screens */
+        /*margin-top: 30px;*/
+    }
+    .how-to-use-container h2 {
+        font-size: 1.6em;
+    }
+    .how-to-use-container h3 {
+        font-size: 1.3em;
+    }
 }
