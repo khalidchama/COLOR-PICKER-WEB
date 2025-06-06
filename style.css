@@ -226,3 +226,72 @@ span {
         font-size: 1.3em;
     }
 }
+
+/* Footer Styling */
+.site-footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #f4f4f4; /* Light text color */
+    padding: 25px 20px; /* Vertical and horizontal padding */
+    text-align: center;
+    /*margin-top: 50px; /* Space above the footer */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 0.9em; /* Slightly smaller text */
+}
+
+.site-footer .footer-content {
+    max-width: 700px; /* Align with your main content width */
+    margin: 0 auto; /* Center the content */
+}
+
+.site-footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.site-footer .developer-credit {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #bbb; /* Slightly lighter color */
+}
+
+.site-footer .footer-links {
+    margin-top: 15px;
+}
+
+.site-footer .footer-links a {
+    color: #007bff; /* Use your primary blue for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease;
+}
+
+.site-footer .footer-links a:hover {
+    color: #fff; /* White on hover for better visibility */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Ensure body has a minimum height to push footer to bottom if content is short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the viewport */
+    margin: 0;
+}
+
+.color-picker-container, .how-to-use-container {
+    /* Existing styles, ensure these allow for vertical growth */
+    flex-shrink: 0; /* Prevent these from shrinking if content is small */
+    margin-bottom: auto; /* Push the footer to the bottom */
+}
+
+/* New: A general content wrapper if you have multiple sections */
+/* This is optional, but helps structure the main content */
+/*
+.main-content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; /* Space before footer if main content is short 
+}
+*/
