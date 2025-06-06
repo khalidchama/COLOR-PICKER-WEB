@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.color-picker-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.top-group {display: flex;}
+
+.top-group img {
+    height: 30px;
+    width: 30px;
+}
+
+.title-top {
+    align-content: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+h1 {
+    /*color: #007bff;*/
+    color: rgb(0, 112, 80);
+    margin-bottom: 25px;
+}
+
+.color-display {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    margin: 0 auto 25px auto;
+    border-radius: 10%;
+    background-color: #007bff; /*Initial color*/
+}
+
+.input-group, .slider-group, .output-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    min-width: 120px;
+    text-align: left;
+}
+
+input[type="color"] {
+    flex-grow: 1;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: monospace;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 30px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+span {
+    min-width: 30px;
+    text-align: right;
+    font-weight: bold;
+}
