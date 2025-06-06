@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -16,7 +20,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .top-group {display: flex;}
@@ -26,8 +30,15 @@ body {
     width: 30px;
 }
 
+.welcome {
+    text-align: left;
+    margin: 20px auto;
+    line-height: 30px;
+}
+
 .title-top {
     align-content: center;
+    font-size: 150%;
     font-weight: bold;
     padding: 0 10px;
 }
