@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the Privacy Policy Container */
+.privacy-policy-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px; /* Space above it */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 700px; /* Wider for policy text if needed */
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.privacy-policy-container h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.privacy-policy-container h3 {
+    color: #007bff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.privacy-policy-container ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-container ul li {
+    margin-bottom: 8px;
+}
+
+.privacy-policy-container p {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .privacy-policy-container {
+        padding: 20px;
+    }
+    .privacy-policy-container h2 {
+        font-size: 1.8em;
+    }
+    .privacy-policy-container h3 {
+        font-size: 1.3em;
+    }
+}

@@ -4,8 +4,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    /*display: flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
     align-items: center;*/
     min-height: 100vh;
     margin: 0;
@@ -271,12 +272,6 @@ span {
 }
 
 /* Ensure body has a minimum height to push footer to bottom if content is short */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Minimum height of the viewport */
-    margin: 0;
-}
 
 .color-picker-container, .how-to-use-container {
     /* Existing styles, ensure these allow for vertical growth */
